@@ -1,0 +1,35 @@
+{
+  "name": "junglist",
+  "version": "1.0.0",
+  "description": "livescript + express + slm + stylus + browserify",
+  "main": "junglist.js",
+  "private": true,
+  "author": {
+    "name": "Dan Finch",
+    "email": "d@nfin.ch",
+    "url": "http://da.nfin.ch/"
+  },
+  "homepage": "http://github.com/secretFriendly/junglist",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/secretFriendly/junglist"
+  },
+  "dependencies": {
+    "LiveScript": "^1.3.1",
+    "browserify": "^8.1.3",
+    "deasync": "0.0.8",
+    "debowerify": "^1.2.0",
+    "js-string-escape": "^1.0.0",
+    "slm": "^0.3.5",
+    "slm-markdown": "^1.0.0",
+    "stream-cache": "0.0.2",
+    "string-to-stream": "^1.0.0",
+    "stylus": "^0.50.0",
+    "watchify": "^2.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "prepublish": "lsc -c .",
+    "clean": "rm *.js"
+  }
+}
