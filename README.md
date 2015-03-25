@@ -74,6 +74,10 @@ server.use "/app", junglist.app "my-app"
 
 ## Slm Extensions
 
+### markdown:
+
+slm-markdown is included.
+
 ### style:
 
 Stylus in Slm.
@@ -127,3 +131,4 @@ Embed a font as a data: URI from the "fonts" directory. .woff is assumed.
 
 - tests
 - less/more opinions
+- styles/shared (global includes)

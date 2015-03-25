@@ -10,7 +10,14 @@ require! \stream-cache
 require! \string-to-stream
 require! \js-string-escape
 
+# todo: put into class, add .at(path)
+
 module.exports = { page, style, script, app, reloader }
+
+# junglist = module.exports = new Middleware!
+# junglist.Middleware = Middleware
+# junglist.at = (path) ->
+#   new Middleware path
 
 register-slm-extensions!
 
@@ -71,7 +78,7 @@ function app filename, options
     cache.pipe res
 
 function reloader poll-path
-  poll = 500ms
+  poll = 1000ms
   version = Date.now!
   middleware.reload = reload
   middleware.live-reload = live-reload
@@ -151,7 +158,7 @@ function register-slm-extensions
     output
   slm.template.register-embedded-function "style", (body) ->
     css = compile-style-sync body, null
-    "<style><#css</style>"
+    "<style>#css</style>"
   slm.template.register-embedded-function "script", (body) ->
     js = compile-script body
     "<script>#js</script>"

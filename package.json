@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "livescript + express + slm + stylus + browserify",
   "main": "junglist.js",
-  "private": true,
   "author": {
     "name": "Dan Finch",
     "email": "d@nfin.ch",
