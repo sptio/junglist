@@ -58,7 +58,7 @@ function app filename, options
   for t in settings.transforms
     bundler.transform t
   bundler.on \update -> build!
-  bunder.on \bundle ->
+  bundler.on \bundle ->
     if settings.update
       settings.update!
   build!
